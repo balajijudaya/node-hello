@@ -5,6 +5,15 @@
   "author": "OpsWorkshop ",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha 'tests/**/*.js' --exit",
+    "func-test": "cucumber-js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.2",
+    "mocha": "^6.2.1",
+    "request": "^2.88.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
   }
 }
